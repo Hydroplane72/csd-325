@@ -1,0 +1,8 @@
+
+Topic Chosen: Don't outrun your headlights
+	I chose this topic because I personally face this issue constantly in a project I have been working on for the last 2 years. The project began with a vague understanding that many existing desktop applications may not exist in their current form. To start with, I created a plan to update all these applications to utilize a single source of truth for their data needs. That way, over time, as we updated these applications. The method for obtaining data for these applications would remain in a single location and be easy to modify if a problem were found.
+	This topic is about how you don't want to think too far ahead when designing and writing software. Instead, you will be better off taking small steps and checking often that you are still on the right path. To return to my example, I have updated most of the applications to use this single source of truth. Over time, I have discovered that specific applications will no longer be available on desktop computers within the next year or two. Suppose I had put all my effort into ensuring that absolutely no data source comes outside of my new project. I would have wasted hundreds of hours converting these projects, which are set to be deprecated, with minimal ROI.
+	The article offers a great way to break down large tasks into smaller, manageable pieces by using the 'half the check-in rule'. You can feel more accomplished every time you check in. Sometimes, you only get one thing done, and sometimes you can complete three or four tasks before check-in. 
+
+Do you break down your task into mini-tasks? Why or why not? (2019). Quora. https://www.quora.com/Do-you-break-down-your-task-into-mini-tasks-Why-or-why-not
+‌
