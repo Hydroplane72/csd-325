@@ -1,3 +1,7 @@
+#Matthew Rozendaal
+# 10/27/2025
+# module-3/Assignment 3.2
+
 """Cho-Han, by Al Sweigart al@inventwithpython.com
 The traditional Japanese dice game of even-odd.
 View this code athttps://nostarch.com/big-book-small-python-projects
