@@ -8,9 +8,16 @@
     #  It should now return a single string of the form City, Country - population xxx, such as Santiago, Chile - population 5000000.
 #Run test_cities.py again. It should fail. Take a screenshot of the result and paste into your Word document.
 #Now modify your city_country function in city_functions.py so that the population parameter is optional.
+
 #Run test_cities.py again. It should pass. Take a screenshot of the result and paste into your Word document.
-#Modify your city_country function in city_functions.py so it requires a fourth parameter, language. It should now return a single string of the form City, Country - population xxx, Language, such as Santiago, Chile - population 5000000, Spanish.
+
 #Run test_cities.py again. It should fail. Take a screenshot of the result and paste into your Word document.
 #Now modify your city_country function in city_functions.py so that the language argument is optional.
 #Run test_cities.py again. It should pass. Take a screenshot of the result and paste into your Word document.
-#Run city_functions.py. Call the function at least three times using a City, Country for one, City, Country, Population for the next and City, Country, Population, Language for the last. Excecute city_functions.py and take a screenshot of the result. Paste that screenshot into your Word document.
+#Run city_functions.py. 
+# Call the function at least three times using:
+#  a City, Country for one,
+#  City, Country, Population for the next 
+# and City, Country, Population, Language for the last.
+#  Excecute city_functions.py and take a screenshot of the result. 
+# Paste that screenshot into your Word document.
