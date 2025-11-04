@@ -1,0 +1,18 @@
+Using the Pragmatic Programmer reading assignment, select one (1) topic and complete the following:
+Why did you select this topic?
+Summarize the main points (in your own words) of that topic in three or four sentences.
+Find at least one additional resource (video, book, article, website, etc.) that supports your summary. Include a link to that resource.
+
+
+Topic Chosen: Configuration
+	I selected this topic because I am part of the company leading the charge on making external configuration a standard throughout IT projects. The company I work for has had numerous issues over the years, where even a simple configuration change can take nearly a month to implement in production. The challenging part is testing the configuration change. At the same time, it is easy to change the configuration, depending on how the code is set up. That change could be hard to test.
+	The topic does an excellent job of explaining why you should make external configuration an everyday practice in your life when working with code. While having your settings in the .exe.config file works, it is not the recommended approach. It also commonly requires a full release of the application to update that config file. There are multiple steps you can take to make your configuration external. You could store the configuration in a database and have the code read from it directly. At the same time, that may work for a time if you need to create a client-facing application. It is often safer to separate direct database queries from the User interface by using API's. 
+	The topic explicitly mentions obtaining your configuration from an API instead of directly from a file or database. Having the API allows you to exert considerable control and change the configuration returned to the app without needing to perform a full application release. Having a dedicated API for settings will enable you to have a minimal number of setting variables that are "static" within your app. 
+	
+
+Note about the "Don't overdo it" note: 
+	While I do agree with them that there is a point where there is too much configuration. You should still bring that configuration to settings as much as possible. One thing to understand is that for mobile app development, there is a standard method where you don't have any static text directly in your code. Instead, your static text is a separate file that gets called, and this allows the code to switch between languages. What this might mean, however, is quite a bit of headache, since you have to add all of your text within the app to this "languages" file. If the list of language files is not organized in a specific way, it can become challenging to find these language files to add/remove values.
+	
+Here is an article about Azure App configuration. It is actually an elegant program that allows you to have external configuration for your applications without requiring a dedicated API. At the same time, I prefer not to go straight to Azure App Config. Spinning up a brand-new API for each application that requires configuration is a bit much to ask.
+mcleanbyron. (2023, March 29). What is Azure App Configuration? Learn.microsoft.com. https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview
+‌
