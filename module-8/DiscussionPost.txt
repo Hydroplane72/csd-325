@@ -1,0 +1,16 @@
+Topic: Refactoring
+	I chose this topic because it is a highly relevant issue that is discussed almost everywhere you go. Discussing refactoring can be especially challenging when communicating with management. With that said, I have different opinions about what refactoring should look like compared to the book. 
+	The book discusses refactoring as a process that should be done regularly as you learn and grow as a developer. I absolutely agree with the book that we should be constantly checking to ensure we are on the right path. In theory, this is a great idea to live by, and generally, it is correct. However, in practice, rewrites are very difficult to get past management. Unless you can provide a reasonable return on investment, you will generally be advised to live with the code and its functionality. What this eventually means, though, is that instead of refactoring with no external changes involved. Most of the time, you will find yourself refactoring while making changes for external functionality. Doing this, of course, goes against what the book wants you to do, which is to make no external changes when doing refactors.
+	Another thing to keep in mind when refactoring is the amount of time it takes to test and how you will test the changes. Testing is especially challenging when there are no visible external changes. It is hard to ask a business user to test that there is no change to external output when it comes to things like this. You will end up basically asking them to thoroughly test the system, which could take days, weeks, or even months for them to finish "testing," and this is why you will often only perform code refactors when there is a change to external functionality. 
+	Regarding testing, the book recommends using unit tests to ensure that functionality remains consistent and is functioning correctly. The problem there is that most of the time, you will find the code you want to refactor does not have any unit tests. Adding unit tests would mean refactoring or even rewriting the code anyway, because it was not designed in a manner that allows for unit tests to be run on it. 
+	Using a test-driven development mindset when coding helps with this issue. Another pro of doing TDD is that you inherently also refactor your code as you write it to make it fit your tests. In general, you will then find yourself making code that is naturally maintainable as well.
+
+Overall,
+You should refactor constantly and do small changes at a time. It is generally a bad idea to improve everything in the code at once. You will introduce bugs very easily. Additionally, the code you refactor may not always be easily testable. To have the opportunity to test your changes. You will most often have to wait for new features/bugs to be introduced so that you can then find a tester willing to spend time on your program.
+
+Here is an article about refactoring code that aligns with the book's principles.
+Code Monkey. (2025, November 1). How to REFACTOR code PROPERLY! (EXTREMELY Important!). YouTube. https://www.youtube.com/watch?v=SFVSgORBgOg
+‌
+Here is an article discussing the potential drawbacks of refactoring and when it should be avoided.
+Web Dev Simplified. (2023, September 26). Clean Code Is Killing Your Projects. YouTube. https://www.youtube.com/watch?v=1uzlBSL7-UM
+‌
