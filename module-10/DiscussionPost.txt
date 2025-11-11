@@ -1,0 +1,10 @@
+
+Topic Chosen: Working Together
+	I chose this topic because it is one of, if not the best, ways to introduce quality code into a codebase. The book discusses Paired Programming, where two people share a single keyboard and mouse. At the same time, it does slow down the potential output of having two keyboards. Having one keyboard reduces the number of mistakes made by programmers. Meaning less time is wasted fixing that little logic error you forgot about. 
+	The book also discusses mob programming. I don't have as much experience with Mob programming as I do with paired programming. Mob programming is when three or more people discuss what needs to be done while a single person handles the heavy lifting of writing the code. My experience with this is when we are testing a program with a business user and trying to fix logic mistakes they find while on the call with us. If done right, this is an excellent use of everyone's time. If you are in a meeting with someone for more than 30 minutes, you may not be using time as efficiently as you could be. We all had experience with this during our group exercise in module 6.
+	
+	I want to mention a tool you can use to communicate effectively with others in real-time. My preferred method for collaborating with someone when coding is to use Visual Studio Live Share. It allows you to share your code with someone else and let them make changes to things at the same time you are. Another benefit is that if you are working on an API, you can run it locally on your machine. The person connected to your live share can also hit the API and test things. While Live Share does have a communication option, I generally use Teams actually to be on a call with someone.
+
+	The additional resource I found is primarily intended to summarize everything I said above, but in less than a minute. This guy does an excellent job at doing that.
+
+TikTok - Make Your Day. (2025). Tiktok.com. https://www.tiktok.com/@justinbieshaar/video/7359648123179863329
