@@ -1,3 +1,11 @@
+# Alexander Baldree
+# Robert Breutzmann
+# Maksymilian Jankowski
+# Carolina Rodriguez
+# Matthew Rozendaal
+# 11/13/2025
+# Module 6.2
+
 import random, sys, time
 
 try:
@@ -128,7 +136,8 @@ def createNewForest():
 
     for x in range(WIDTH):
         for y in range(HEIGHT):
-            rand = random.random()
+            rand = random.random
+            ()
             if (x, y) in forest:
                 continue  # Already assigned (water).
             elif rand < INITIAL_TREE_DENSITY:
