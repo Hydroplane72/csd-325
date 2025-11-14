@@ -1,30 +1,32 @@
 ```mermaid
-flowchart TD
-%% --- Node Definitions and Connections ---
-Start((Start)):::terminatorStart --> p1[Import Libraries]:::process
-p1 --> d1{Bext Installed?}:::decision
-d1 -- No --> io1[/Display Error - Install Bext/]:::inputOutput
-io1 --> End((Exit)):::terminatorFinish
-d1 -- Yes --> p2[Set up constants]:::process
-p2 --> p3[Set up settings]:::process
-p3 ---> mainF((Main)):::terminatorStart
+flowchart TB
+    Start(("Start")) --> p1["Import Libraries"]
+    p1 --> d1{"Bext Installed?"}
+    d1 -- No --> io1[/"Display Error - Install Bext"/]
+    io1 --> End(("Exit"))
+    d1 -- Yes --> p2["Set up constants"]
+    p2 --> p3["Set up settings"]
+    p3 ---> mainF(("Main"))
+    n1@{ label: "<div style=\"color:\"><div><span style=\"color:\"># Alexander Baldree</span></div><div><span style=\"color:\"># Robert Breutzmann</span></div><div><span style=\"color:\"># Maksymilian Jankowski</span></div><div><span style=\"color:\"># Carolina Rodriguez</span></div><div><span style=\"color:\"># Matthew Rozendaal</span></div></div>" }
 
-%% --- Class Definitions ---
-%% Process Rectangle: Blue (white text)
-classDef process fill:#0066cc,stroke:#333,color:#fff;
+    n1@{ shape: text}
+     Start:::terminatorStart
+     p1:::process
+     d1:::decision
+     io1:::inputOutput
+     End:::terminatorFinish
+     p2:::process
+     p3:::process
+     mainF:::terminatorStart
+    classDef process fill:#0066cc,stroke:#333,color:#fff
+    classDef decision fill:#ff9900,stroke:#333,color:#fff
+    classDef database fill:#ffeb3b,stroke:#333,color:#000
+    classDef inputOutput fill:#9933cc,stroke:#333,color:#fff
+    classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff
+    classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff
 
-%% Decision Diamond: Orange (White Text)
-classDef decision fill:#ff9900,stroke:#333,color:#fff;
 
-%% Database Can: Yellow (Black Text)
-classDef database fill:#ffeb3b,stroke:#333,color:#000;
 
-%% Input/Output Parallelagram: Purple (White Text)
-classDef inputOutput fill:#9933cc,stroke:#333,color:#fff;
-
-%% Terminator Circle: Green for Start, Red for Finish (White Text)
-classDef terminatorStart fill:#4CAF50,stroke:#333,color:#fff;
-classDef terminatorFinish fill:#F44336,stroke:#333,color:#fff;
 ```
 
 ```mermaid
@@ -104,6 +106,8 @@ flowchart TD
 ```
 
 ```mermaid
+
+
 flowchart TD
     Start(("Start createNewForest")) --> n1["Initialize Forest Variable using global setting values"]
     p1["For x,y"] --> n9["Is AlreadySet?"]
@@ -147,8 +151,6 @@ flowchart TD
     classDef terminatorFinish fill:#F44336, stroke:#333, color:#fff
     classDef decision fill:#ff9900, stroke:#333, color:#fff
     classDef process fill:#0066cc, stroke:#333, color:#fff
-
-
 
 
 
