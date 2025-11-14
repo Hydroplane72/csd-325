@@ -23,11 +23,11 @@ HEIGHT = 22
 TREE = 'A'
 FIRE = '@'
 EMPTY = ' '
-WATER = 'W'  # 💧 New water symbol
+WATER = 'W'  #  New water symbol
 
 # (!) Try changing these settings to anything between 0.0 and 1.0:
 INITIAL_TREE_DENSITY = 0.20  # Amount of forest that starts with trees.
-INITIAL_WATER_DENSITY = 0.10  # 💧 Amount of water that starts on the map.
+INITIAL_WATER_DENSITY = 0.10  #  Amount of water that starts on the map.
 GROW_CHANCE = 0.01  # Chance a blank space turns into a tree.
 FIRE_CHANCE = 0.01  # Chance a tree is hit by lightning & burns.
 
@@ -53,7 +53,7 @@ def main():
                 cell = forest[(x, y)]
 
                 if cell == WATER:
-                    # 💧 Water never changes.
+                    #  Water never changes.
                     nextForest[(x, y)] = WATER
 
                 elif (cell == EMPTY) and (random.random() <= GROW_CHANCE):
